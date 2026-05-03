@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="topbar">
+  <div class="topbar-container">
+
+    <div class="topbar-left">
+      <button id="menuToggle" class="menu-btn">☰</button>
+      <h1 class="logo">BMS</h1>
+    </div>
+
+    <div class="topbar-right">
+      <span id="userName" class="user-name"></span>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+  </div>
+</header>
+
+<!-- NEW: Navigation (temporary below header) -->
+<nav id="sidebar" class="nav-links">
+  <a href="dashboard.html">🏠 Dashboard</a>
+  <a href="products.html">📦 Products</a>
+  <a href="orders.html">🧾 Orders</a>
+<<<<<<< HEAD
+<a href="add-product.html">➕ Add Product</a>
+=======
+  <a href="add-product.html">➕ Add Product</a>
+>>>>>>> 74f2dab (Add frontend from phone storage)
+  <a href="create-order.html">➕ Create Order</a>
+</nav>
+<div id="overlay" class="overlay"></div>
+<div class="page">
+  <h2>Products</h2>
+
+  <div id="products" class="grid"></div>
+</div>
+
+<script src="app.js"></script>
+<script>
+  loadProducts();
+</script>
+</html>

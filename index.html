@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS - Business Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+
+    <!-- =========================
+         LEFT SIDE (HERO)
+    ========================== -->
+    <div class="hero">
+
+        <h1>Business Management System</h1>
+
+        <p>
+            Manage your products, orders, and revenue in one simple dashboard.
+            Built for modern businesses.
+        </p>
+
+        <div class="hero-cards">
+
+            <div class="mini-card">📦 Manage Products</div>
+            <div class="mini-card">🧾 Track Orders</div>
+            <div class="mini-card">💰 Monitor Revenue</div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         RIGHT SIDE (AUTH)
+    ========================== -->
+    <div class="auth-box">
+
+        <div class="container">
+
+            <!-- LOGIN -->
+            <div id="loginBox">
+                <h2>Login</h2>
+
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+
+                <button onclick="login()" id="loginBtn">
+                    <span class="btn-text">Login</span>
+                    <span class="btn-loader hidden"></span>
+                </button>
+
+                <p onclick="showRegister()">Don't have an account? Register</p>
+            </div>
+
+            <!-- REGISTER -->
+            <div id="registerBox" style="display:none;">
+                <h2>Register</h2>
+
+                <input type="text" id="regName" placeholder="Name">
+                <input type="email" id="regEmail" placeholder="Email">
+                <input type="password" id="regPassword" placeholder="Password">
+
+                <button onclick="register()" id="registerBtn">
+                    <span class="btn-text">Register</span>
+                    <span class="btn-loader hidden"></span>
+                </button>
+
+                <p onclick="showLogin()">Already have an account? Login</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
