@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-container">
+
+    <div class="topbar-left">
+      <button id="menuToggle" class="menu-btn">☰</button>
+      <h1 class="logo">BMS</h1>
+    </div>
+
+    <div class="topbar-right">
+      <span id="userName" class="user-name"></span>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+  </div>
+</header>
+
+<!-- SIDEBAR -->
+<nav id="sidebar" class="nav-links">
+  <a href="dashboard.html">🏠 Dashboard</a>
+  <a href="products.html">📦 Products</a>
+  <a href="orders.html">🧾 Orders</a>
+  <a href="add-product.html">➕ Add Product</a>
+  <a href="create-order.html">➕ Create Order</a>
+</nav>
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay"></div>
+
+<!-- PAGE CONTENT -->
+<div class="page">
+
+  <h2>Dashboard</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>📦 Products</h3>
+      <p>Manage your products</p>
+      <a href="products.html">Go to Products →</a>
+    </div>
+
+    <div class="card">
+      <h3>🧾 Orders</h3>
+      <p>View all orders</p>
+      <a href="orders.html">Go to Orders →</a>
+    </div>
+
+    <div class="card">
+      <h3>➕ Create Order</h3>
+      <p>Create a new order</p>
+      <a href="create-order.html">Create Order →</a>
+    </div>
+
+  </div>
+
+</div>
+<div class="dashboard-cards">
+
+  <div class="stat-card">
+    <h3>📦 Products</h3>
+   <div id="totalProducts">0</div> 
+  </div>
+
+  <div class="stat-card">
+    <h3>🧾 Orders</h3>
+    <div id="totalOrders">0</div>
+  </div>
+
+  <div class="stat-card">
+    <h3>💰 Revenue</h3>
+    <div id="totalRevenue">$0</div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
